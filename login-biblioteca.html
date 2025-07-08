@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Biblioteca CDL</title>
+    <link rel="icon" href="img/favicon.jpg">
+
+    <!-- Google Font & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('img/biblioteca-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-wrapper {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .login-wrapper h2 {
+            color: #fd7e14;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control {
+            border-radius: 50px;
+        }
+
+        .btn-primary {
+            background-color: #fd7e14;
+            border: none;
+            border-radius: 50px;
+        }
+
+        .btn-primary:hover {
+            background-color: #e96d0d;
+        }
+
+        .login-icon {
+            font-size: 3rem;
+            color: #fd7e14;
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-options {
+            font-size: 0.9rem;
+        }
+
+        .form-options a {
+            color: #fd7e14;
+            text-decoration: none;
+        }
+
+        .form-options a:hover {
+            text-decoration: underline;
+        }
+
+        .password-wrapper {
+            position: relative;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-wrapper text-center">
+        <div class="login-header">
+            <i class="fas fa-book-open login-icon mb-3"></i>
+            <h2>Acesso à Biblioteca CDL</h2>
+        </div>
+
+        <form action="biblioteca-dashboard.html" method="post">
+            <div class="form-group text-left">
+                <label for="email">Email</label>
+                <input type="email" class="form-control py-2 px-4" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="form-group text-left">
+                <label for="senha">Senha</label>
+                <div class="password-wrapper">
+                    <input type="password" class="form-control py-2 px-4" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    <span class="toggle-password" onclick="togglePassword()">
+                        <i class="fas fa-eye" id="eyeIcon"></i>
+                    </span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block py-2 mt-3">Entrar</button>
+        </form>
+
+        <!-- Opções adicionais -->
+        <div class="form-options text-left mt-4">
+            <a href="#">Esqueceu a senha?</a><br>
+            <a href="#">Solicitar credenciais de acesso</a>
+        </div>
+
+        <small class="d-block mt-4">© CDL 2025 | Todos os direitos reservados</small>
+    </div>
+
+    <!-- Script para mostrar/ocultar senha -->
+    <script>
+        function togglePassword() {
+            const senhaInput = document.getElementById("senha");
+            const eyeIcon = document.getElementById("eyeIcon");
+
+            if (senhaInput.type === "password") {
+                senhaInput.type = "text";
+                eyeIcon.classList.remove("fa-eye");
+                eyeIcon.classList.add("fa-eye-slash");
+            } else {
+                senhaInput.type = "password";
+                eyeIcon.classList.remove("fa-eye-slash");
+                eyeIcon.classList.add("fa-eye");
+            }
+        }
+    </script>
+
+</body>
+</html>
