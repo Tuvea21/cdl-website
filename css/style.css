@@ -73,6 +73,18 @@ body {
     line-height: 1.2;
 }
 
+.team-img {
+    height: 300px; /* Altura fixa */
+    width: 100%; /* Largura responsiva dentro do card */
+    overflow: hidden;
+}
+
+.team-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Faz a imagem preencher sem distorcer */
+}
+
 
 /* Estilos específicos para o mapa */
 #mapa-localizacao {
