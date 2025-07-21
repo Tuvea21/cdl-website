@@ -94,18 +94,31 @@
                     </div>
 
                     <!-- Centro: LINKS DE NAVEGAÇÃO -->
-                    <div class="navbar-nav mx-auto">
-                        <a href="index.html" class="nav-item nav-link active">Início</a>
-                        <a href="about.html" class="nav-item nav-link">A CDL</a>
-                        <a href="course.html" class="nav-item nav-link">Cursos</a>
-                        <a href="estudante.html" class="nav-item nav-link">Estudantes</a>
-                        <a href="teacher.html" class="nav-item nav-link">Professores</a>
-                        <a href="contact.html" class="nav-item nav-link">Contactos</a>
+                  <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Início</a>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">A CDL</a>
+                        <div class="dropdown-menu custom-dropdown-menu">
+                            <a href="historia.html" class="dropdown-item">História</a>
+                            <a href="visao-missao.html" class="dropdown-item">Visão e Missão</a>
+                            <a href="politicas-estatuto.html" class="dropdown-item">Políticas e Estatuto</a>
+                            <a href="normas-regulamentos.html" class="dropdown-item">Normas e Regulamentos</a>
+                        </div>
                     </div>
+
+                    <a href="course.html" class="nav-item nav-link">Cursos</a>
+                    <a href="estudante.html" class="nav-item nav-link">Estudantes</a>
+                    <a href="teacher.html" class="nav-item nav-link">Professores</a>
+                    <a href="contact.html" class="nav-item nav-link">Contactos</a>
+                </div>
+
+
+
 
                     <!-- Direita: BOTÃO MOODLE -->
                     <div class="d-none d-lg-flex align-items-center">
-                        <a class="btn btn-primary py-2 px-4 ml-4" href="http://localhost/moodle/login/index.php" target="_blank">Moodle</a>
+                        <a class="btn btn-primary py-2 px-4 ml-4" href="http://localhost/moodle/login/index.php" target="_blank">E-campus</a>
                     </div>
                 </div>
             </nav>
@@ -197,7 +210,7 @@
             <div class="col-lg-10">
                 <div class="border border-warning rounded p-5 shadow-sm bg-white text-center">
                     <h5 class="mb-0 text-dark font-weight-normal">
-                        O Centro de Desenvolvimento de Liderança (CDL) é uma Escola Bíblica que oferece treinamento formal e informal para pastores e líderes de igrejas em Moçambique e países africanos de língua portuguesa que anseiam por estudos teológicos bíblicos presenciais e online.
+                        O Centro de Desenvolvimento de Liderança (CDL) é uma Escola Bíblica que oferece treinamento formal e não formal para pastores e líderes de igrejas em Moçambique e países africanos de língua portuguesa que anseiam por estudos teológicos bíblicos presenciais e online.
                     </h5>
                 </div>
             </div>
@@ -216,7 +229,7 @@
             <!-- Eventos -->
             <div class="col-md-4 mb-4">
                 <div class="p-4 rounded shadow-sm" style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,0,0,0.05);">
-                    <h4 class="text-success font-weight-bold mb-3">Eventos</h4>
+                    <h4 class="text-primary font-weight-bold mb-3">Eventos</h4>
                     <div class="border-left pl-3">
                         <p class="mb-1 text-muted font-weight-bold">21 julho</p>
                         <p class="mb-1"><i class="far fa-clock text-primary mr-2"></i>21 julho - 1 agosto</p>
@@ -232,7 +245,7 @@
             <!-- Anúncios -->
             <div class="col-md-4 mb-4">
                 <div class="p-4 rounded shadow-sm" style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,0,0,0.05);">
-                    <h4 class="text-success font-weight-bold mb-3">Anúncios</h4>
+                    <h4 class="text-primary font-weight-bold mb-3">Anúncios</h4>
                     <div class="bg-white rounded p-3 mb-3" style="border: 1px solid rgba(0,0,0,0.1); background-color: rgba(255,255,255,0.9);">
                         <h6 class="font-weight-bold">Bolsas de Estudos para o Brasil</h6>
                         <a href="#" class="text-primary small">SABER MAIS»</a>
@@ -251,31 +264,31 @@
             <!-- Recursos -->
             <div class="col-md-4 mb-4">
                 <div class="p-4 rounded shadow-sm" style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,0,0,0.05);">
-                    <h4 class="text-success font-weight-bold mb-3">Recursos do site</h4>
+                    <h4 class="text-primary font-weight-bold mb-3">Recursos do site</h4>
                     <ul class="list-unstyled">
                         <li class="mb-3 d-flex align-items-center">
-                            <i class="fas fa-book fa-lg text-success mr-3"></i>
+                            <i class="fas fa-book fa-lg text-primary mr-3"></i>
                             <span>Biblioteca</span>
                         </li>
                         <li class="mb-3 d-flex align-items-center">
-                            <i class="fas fa-user-cog fa-lg text-success mr-3"></i>
-                            <span>Sistema de Gestão Académica</span>
+                            <i class="fas fa-user-cog fa-lg text-primary mr-3"></i>
+                            <span>Moodle</span>
                         </li>
                         <li class="mb-3 d-flex align-items-center">
-                            <i class="fas fa-book-reader fa-lg text-success mr-3"></i>
-                            <span>Plataformas de Ensino</span>
+                            <i class="fas fa-book-reader fa-lg text-primary mr-3"></i>
+                            <span>Área do Estudante</span>
                         </li>
                         <li class="mb-3 d-flex align-items-center">
-                            <i class="fas fa-laptop fa-lg text-success mr-3"></i>
+                            <i class="fas fa-laptop fa-lg text-primary mr-3"></i>
                             <span>E-campus</span>
                         </li>
                         <li class="mb-3 d-flex align-items-center">
-                            <i class="fas fa-envelope fa-lg text-success mr-3"></i>
+                            <i class="fas fa-envelope fa-lg text-primary mr-3"></i>
                             <span>Webmail</span>
                         </li>
                         <li class="d-flex align-items-center">
-                            <i class="fas fa-book-open fa-lg text-success mr-3"></i>
-                            <span>Revista Científica da CDL</span>
+                            <i class="fas fa-book-open fa-lg text-primary mr-3"></i>
+                            <span>Registo académico da CDL</span>
                         </li>
                     </ul>
                 </div>

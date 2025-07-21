@@ -85,6 +85,28 @@ body {
     object-fit: cover; /* Faz a imagem preencher sem distorcer */
 }
 
+/* Estilo geral do dropdown */
+/* Dropdown com sombra suave e sem bordas arredondadas */
+.custom-dropdown-menu {
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+/* Estilo dos itens do dropdown */
+.custom-dropdown-menu .dropdown-item {
+    color: #333;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover elegante */
+.custom-dropdown-menu .dropdown-item:hover {
+    color: #007bff; /* Bootstrap primary */
+    background-color: #f1f1f1;
+}
 
 /* Estilos específicos para o mapa */
 #mapa-localizacao {
