@@ -100,6 +100,67 @@ body {
 
 
 
+.mission-section {
+  background: linear-gradient(135deg, #1f1f2e 0%, #232342 100%);
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-section::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255,255,255,0.02) 0%, transparent 70%);
+  animation: floatBackground 20s infinite linear;
+  z-index: 0;
+}
+
+@keyframes floatBackground {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(20px, 20px); }
+  100% { transform: translate(0, 0); }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.bounce-in {
+  animation: bounceIn 1s;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
 /* Estilos específicos para o mapa */
 #mapa-localizacao {
     background-color: #f8f9fa;
